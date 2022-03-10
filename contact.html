@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html dir="ltr" lang="en">
+<html dir="ltr" lang="es">
 <head>
 	<!-- Meta Tags -->	
 	<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
@@ -139,33 +139,34 @@
 				<div class="col-md-8">
 					<div class="contact-field">
 						<h2>Redacte su mensaje</h2>
+						<form id="main-contact-form" class="contact-form" name="contact-form" action="enviar.php" method="POST">
 						<div class="col-md-6 col-sm-6 col-xs-12">
 							<div class="single-input-field">
-								<input placeholder="Nombre" type="text">
+								<input placeholder="Nombre"type="text" id="nombre" name="nombre" required="required">
 							</div>
 						</div>						
 						<div class="col-md-6 col-sm-6 col-xs-12">
 							<div class="single-input-field">
-								<input placeholder="Apellido" type="text">
+								<input placeholder="Apellido" type="text" id="apellido" name="apellido" required="required">
 							</div>
 						</div>								
 						<div class="col-md-6 col-sm-6 col-xs-12">
 							<div class="single-input-field">
-								<input placeholder="Telefono" type="text">
+								<input placeholder="Telefono" type="text" id="telefono" name="telefono" required="required">
 							</div>
 						</div>						
 						<div class="col-md-6 col-sm-6 col-xs-12">
 							<div class="single-input-field">
-								<input placeholder="Correo Electronico" type="email">
+								<input placeholder="Correo Electronico" type="email" id="email" name="email" required="required">
 							</div>
 						</div>					
 						<div class="col-md-12 message-input">
 							<div class="single-input-field">
-								<textarea placeholder="Mensaje"></textarea>
+								<textarea placeholder="Mensaje" name="mensaje" id="mensaje" required="required" class="form-control" rows="8"></textarea>
 							</div>
 						</div>																				
 						<div class="single-input-fieldsbtn">
-							<input value="Enviar Ahora " type="submit">
+							<input type="submit" id="submit" name="submit" class="btn btn-primary btn-lg" value="Enviar" />
 						</div>							
 					</div>				
 				</div>
@@ -279,7 +280,7 @@
 								<div class="footer-social-profile">
 									
 									<ul>
-										<li><a href=""><i class="fa fa-whatsapp"></i></a></li>
+										<li><a href="https://api.whatsapp.com/send?phone=573212414138&text=¡Hola!, Nececito mas informacion acerca de sus prodcutos"><i class="fa fa-whatsapp"></i></a></li>
 										
 									</ul>
 								</div>									

@@ -140,32 +140,34 @@
 					<div class="contact-field">
 						<h2>Redacte su mensaje</h2>
 						<form id="main-contact-form" class="contact-form" name="contact-form" action="enviar.php" method="POST">
-      						<div class="col-sm-5 col-sm-offset-1">
-          						<div class="form-group">
-             					<label>Nombre *</label>
-             					<input type="text" id="nombre" name="nombre" class="form-control" required="required">
-           						</div>
-
-           						<div class="form-group">
-             				 	<label>Email *</label>
-              					<input type="email" id="email" name="email" class="form-control" required="required">
-						           </div> 
-
-						           <div class="form-group">
-						               <label>Asunto *</label>
-						               <input type="text" id="subject" name="subject" class="form-control" required="required">
-						           </div>
-
-						           <div class="form-group">
-						                <label>Mensaje *</label>
-						                <textarea name="mensaje" id="mensaje" required="required" class="form-control" rows="8"></textarea>
-						           </div>                        
-
-						           <div class="form-group">
-						                <input type="submit" id="submit" name="submit" class="btn btn-primary btn-lg" value="Enviar" />
-						           </div>                      
-						      </div> 
-						</form>							
+						<div class="col-md-6 col-sm-6 col-xs-12">
+							<div class="single-input-field">
+								<input placeholder="Nombre"type="text" id="nombre" name="nombre" required="required">
+							</div>
+						</div>						
+						<div class="col-md-6 col-sm-6 col-xs-12">
+							<div class="single-input-field">
+								<input placeholder="Apellido" type="text" id="apellido" name="apellido" required="required">
+							</div>
+						</div>								
+						<div class="col-md-6 col-sm-6 col-xs-12">
+							<div class="single-input-field">
+								<input placeholder="Telefono" type="text" id="telefono" name="telefono" required="required">
+							</div>
+						</div>						
+						<div class="col-md-6 col-sm-6 col-xs-12">
+							<div class="single-input-field">
+								<input placeholder="Correo Electronico" type="email" id="email" name="email" required="required">
+							</div>
+						</div>					
+						<div class="col-md-12 message-input">
+							<div class="single-input-field">
+								<textarea placeholder="Mensaje" name="mensaje" id="mensaje" required="required" class="form-control" rows="8"></textarea>
+							</div>
+						</div>																				
+						<div class="single-input-fieldsbtn">
+							<input type="submit" id="submit" name="submit" class="btn btn-primary btn-lg" value="Enviar" />
+						</div>							
 					</div>				
 				</div>
 				<div class="col-md-4">
